@@ -16,9 +16,8 @@ WHERE location like '%States%'
 ORDER BY 1,2
 
 ---Looking At Total Cases VS Population
----Shows What Percentage Of Population Got Covid
 
-SELECT location, date,population, total_cases,(total_deaths/population)*100 AS casesPerPop
+SELECT location, date,population, total_cases,(total_cases/population)*100 AS casesPerPop
 FROM PortfolioProject..CovidDeaths
 WHERE location like '%Andorra'
 ORDER BY 1,2
